@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How It Works — Aba Craft</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.hiw-block{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:72px 0;border-bottom:1px solid var(--border);}
+.hiw-block:last-child{border-bottom:none;}
+.hiw-block.reverse{direction:rtl;} .hiw-block.reverse>*{direction:ltr;}
+.hiw-num{font-family:'Playfair Display',serif;font-size:96px;font-weight:900;color:var(--clay-light);line-height:1;margin-bottom:-20px;}
+.hiw-img{border-radius:16px;overflow:hidden;height:320px;}
+.hiw-img img{width:100%;height:100%;object-fit:cover;}
+.hiw-checklist{margin-top:20px;display:flex;flex-direction:column;gap:10px;}
+.hiw-check{display:flex;gap:12px;align-items:flex-start;font-size:14.5px;color:var(--muted);}
+.hiw-check::before{content:"✓";color:var(--clay);font-weight:700;flex-shrink:0;margin-top:2px;}
+@media(max-width:768px){.hiw-block,.hiw-block.reverse{grid-template-columns:1fr;direction:ltr;gap:32px;padding:48px 0;}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left"><span>🇳🇬 Made in Aba</span><div class="sep"></div><a href="tel:+2348100000000">📞 +234 810 000 0000</a></div>
+  <div class="topbar-right"><a href="https://wa.me/2348100000000" target="_blank">💬 WhatsApp</a><div class="sep"></div><a href="contact.html">✉️ Contact</a></div>
+</div>
+
+<nav class="main-nav">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+    <div><div class="nav-brand">Aba Craft</div><div class="nav-tagline">Handmade in Aba</div></div>
+  </a>
+  <ul class="nav-menu">
+    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+    <li class="nav-item"><a href="how-it-works.html" class="nav-link active">How It Works</a></li>
+    <li class="nav-item"><a href="about.html" class="nav-link">Our Story</a></li>
+    <li class="nav-item"><a href="news.html" class="nav-link">News &amp; Blog</a></li>
+    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+  </ul>
+  <div class="nav-cta-wrap">
+    <a href="contact.html" class="btn-nav-outline">Contact Us</a>
+    <a href="products.html" class="btn-nav-solid">Shop Now →</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="products.html" class="mobile-nav-link">Products</a>
+  <a href="how-it-works.html" class="mobile-nav-link">How It Works</a>
+  <a href="about.html" class="mobile-nav-link">Our Story</a>
+  <a href="news.html" class="mobile-nav-link">News &amp; Blog</a>
+  <a href="faq.html" class="mobile-nav-link">FAQ</a>
+  <div class="mobile-cta-wrap">
+    <a href="products.html" class="btn-nav-solid" style="text-align:center;padding:12px;">Shop Now →</a>
+  </div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Home</a> › How It Works</div>
+    <h1>How Aba Craft Works</h1>
+    <p>Everything you need to know — buying, ordering, delivery, returns, and becoming an artisan on our platform.</p>
+  </div>
+</div>
+
+<!-- BUYING -->
+<section class="section section-white" id="buying">
+  <div class="container">
+    <div class="section-hd"><div class="section-eyebrow">Buyers</div><h2 class="section-title">🛒 Buying Guide</h2><p class="section-sub">Here is exactly how to get authentic Aba-made products delivered to your door.</p></div>
+    <div style="padding:0;">
+      <div class="hiw-block">
+        <div><div class="hiw-num">01</div><h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--dark);margin-bottom:12px;">Browse &amp; Choose Your Product</h3><p style="color:var(--muted);font-size:15px;line-height:1.8;">Visit our Products page to explore categories — footwear, bags, fashion, furniture, and more. Each listing shows price, artisan details, and available options.</p><div class="hiw-checklist"><div class="hiw-check">Filter by category or use search</div><div class="hiw-check">View artisan profiles and ratings</div><div class="hiw-check">Compare sizes, colours, and finishes</div></div></div>
+        <div class="hiw-img"><img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=700&q=80" alt="Browsing products"></div>
+      </div>
+      <div class="hiw-block reverse">
+        <div><div class="hiw-num">02</div><h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--dark);margin-bottom:12px;">Place Your Order via WhatsApp</h3><p style="color:var(--muted);font-size:15px;line-height:1.8;">Click "Order Now" on any product to open a pre-filled WhatsApp message to our team. Tell us your size, colour preference, and delivery address.</p><div class="hiw-checklist"><div class="hiw-check">Pre-filled order message for convenience</div><div class="hiw-check">Pay on delivery or via bank transfer</div><div class="hiw-check">Custom measurements accepted</div></div></div>
+        <div class="hiw-img"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=700&q=80" alt="WhatsApp ordering"></div>
+      </div>
+      <div class="hiw-block">
+        <div><div class="hiw-num">03</div><h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--dark);margin-bottom:12px;">Artisan Crafts &amp; Quality Checks</h3><p style="color:var(--muted);font-size:15px;line-height:1.8;">Your order goes to a verified Aba artisan who crafts it fresh. Our quality team inspects the item before it is packaged and dispatched.</p><div class="hiw-checklist"><div class="hiw-check">Made-to-order — fresh every time</div><div class="hiw-check">Quality inspection before dispatch</div><div class="hiw-check">Secure, branded packaging</div></div></div>
+        <div class="hiw-img"><img src="https://images.unsplash.com/photo-1605812830455-2fadc55bc4ba?w=700&q=80" alt="Artisan crafting"></div>
+      </div>
+      <div class="hiw-block reverse">
+        <div><div class="hiw-num">04</div><h3 style="font-family:'Playfair Display',serif;font-size:24px;color:var(--dark);margin-bottom:12px;">Fast, Tracked Delivery to Your Door</h3><p style="color:var(--muted);font-size:15px;line-height:1.8;">We use trusted logistics partners to deliver across all 36 states. You receive a tracking number and regular WhatsApp updates.</p><div class="hiw-checklist"><div class="hiw-check">2–5 working days within Nigeria</div><div class="hiw-check">Real-time tracking updates</div><div class="hiw-check">Insured against damage or loss</div></div></div>
+        <div class="hiw-img"><img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=700&q=80" alt="Package delivery"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="section section-cream" id="delivery">
+  <div class="container">
+    <div class="section-hd center"><div class="section-eyebrow">Logistics</div><h2 class="section-title">🚚 Delivery &amp; Shipping</h2></div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
+      <div class="info-card"><h3>Within Nigeria</h3><p>Standard delivery to all 36 states via GIG Logistics, DHL Nigeria, and Kwik. Estimated 2–5 working days depending on location. Lagos, Abuja, and Port Harcourt get priority same-week delivery.</p></div>
+      <div class="info-card"><h3>International Export</h3><p>We ship to the UK, USA, Canada, Germany, Australia, and more via DHL Express and Aramex. Estimated 7–14 working days. All customs documentation handled by our export team.</p></div>
+      <div class="info-card"><h3>Delivery Rates</h3><ul><li>Lagos / Abuja / PH: ₦2,500 – ₦4,000</li><li>Other Nigerian cities: ₦3,500 – ₦6,000</li><li>International: Calculated by weight &amp; destination</li><li>Free delivery on orders above ₦100,000</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- RETURNS -->
+<section class="section section-white" id="returns">
+  <div class="container">
+    <div class="section-hd"><div class="section-eyebrow">Policy</div><h2 class="section-title">🔄 Returns &amp; Refunds</h2><p class="section-sub">We stand behind every product. If something is wrong, we make it right.</p></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <div class="info-card"><h3>When Can You Return?</h3><ul><li>Item received is different from what was ordered</li><li>Manufacturing defect or quality issue</li><li>Wrong size delivered (where applicable)</li><li>Item damaged in transit</li></ul><p style="margin-top:12px;">Returns must be initiated within <strong>7 days</strong> of delivery. Contact us via WhatsApp with photos of the item.</p></div>
+      <div class="info-card"><h3>What Happens Next?</h3><ul><li>We review your photos within 24 hours</li><li>We arrange free pickup of the returned item</li><li>Replacement dispatched within 5 working days</li><li>Refund processed within 3–5 business days (bank transfer)</li></ul><p style="margin-top:12px;">Custom-made or personalised orders are non-refundable unless defective.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SELLING / BECOME ARTISAN -->
+<section class="section section-dark" id="selling">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
+      <div>
+        <div class="section-eyebrow gold">For Artisans</div>
+        <h2 class="section-title white">🏪 Become an Aba Craft Artisan</h2>
+        <p class="section-sub white">Are you a skilled craftsman in Aba or anywhere in Nigeria? List your products on Aba Craft and reach thousands of buyers nationwide and internationally.</p>
+        <div style="margin-top:32px;"><a href="contact.html" class="btn-hero-primary">Apply to Join →</a></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item"><div class="feature-icon-wrap">📱</div><div><h4>Free Listing</h4><p>Create your artisan profile and list your products at no cost.</p></div></div>
+        <div class="feature-item"><div class="feature-icon-wrap">💰</div><div><h4>Fair Earnings</h4><p>You set your price. We charge a small platform fee only when you sell.</p></div></div>
+        <div class="feature-item"><div class="feature-icon-wrap">🚚</div><div><h4>We Handle Logistics</h4><p>Focus on crafting. We handle delivery, packaging, and customer service.</p></div></div>
+        <div class="feature-item"><div class="feature-icon-wrap">🌍</div><div><h4>Global Reach</h4><p>Your work can reach buyers in the UK, USA, and beyond through our export arm.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Ready to Shop or Sell?</h2>
+  <p>Browse our products or apply to list yours as a verified Aba artisan.</p>
+  <div class="cta-banner-btns">
+    <a href="products.html" class="btn-white">Browse Products</a>
+    <a href="contact.html" class="btn-outline-white">Become an Artisan</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div><div><div class="nav-brand" style="color:white;">Aba Craft</div></div></div><p>Connecting Aba's finest artisans with buyers across Nigeria and the world.</p><div class="footer-social"><a href="#">fb</a><a href="#">ig</a><a href="https://wa.me/2348100000000">wa</a></div></div>
+    <div class="footer-col"><h5>Products</h5><ul><li><a href="products.html">All Products</a></li><li><a href="products.html#footwear">Footwear</a></li><li><a href="products.html#bags">Bags</a></li></ul></div>
+    <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">Our Story</a></li><li><a href="news.html">News</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Contact Us</a></li><li><a href="#returns">Returns</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Aba Craft. All rights reserved.</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span></div>
+</footer>
+<script>
+  const ham=document.getElementById('hamburger'),mob=document.getElementById('mobileNav');
+  ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');});
+</script>
+</body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Aba Craft</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:40px;}
+.contact-info{display:flex;flex-direction:column;gap:20px;}
+.contact-info-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;gap:16px;align-items:flex-start;}
+.contact-info-icon{width:44px;height:44px;border-radius:10px;background:var(--clay-light);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0;}
+.contact-info-card h4{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:4px;}
+.contact-info-card p,.contact-info-card a{font-size:13.5px;color:var(--muted);}
+.contact-info-card a:hover{color:var(--clay);}
+.form-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:36px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.wa-btn{background:#25D366;color:white;padding:14px 28px;border-radius:8px;font-size:15px;font-weight:600;display:inline-flex;align-items:center;gap:10px;text-decoration:none;transition:background .2s;}
+.wa-btn:hover{background:#1DA851;}
+.map-embed{border-radius:14px;overflow:hidden;border:1px solid var(--border);height:280px;background:#e8e4e0;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:14px;}
+@media(max-width:768px){.contact-grid{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left"><span>🇳🇬 Made in Aba, Delivered Nationwide</span><div class="sep"></div><a href="tel:+2348100000000">📞 +234 810 000 0000</a></div>
+  <div class="topbar-right"><a href="https://wa.me/2348100000000" target="_blank">💬 WhatsApp</a></div>
+</div>
+<nav class="main-nav">
+  <a href="../index.html" class="nav-logo"><div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div><div><div class="nav-brand">Aba Craft</div><div class="nav-tagline">Handmade in Aba</div></div></a>
+  <ul class="nav-menu">
+    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+    <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+    <li class="nav-item"><a href="about.html" class="nav-link">Our Story</a></li>
+    <li class="nav-item"><a href="news.html" class="nav-link">News &amp; Blog</a></li>
+    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+  </ul>
+  <div class="nav-cta-wrap"><a href="products.html" class="btn-nav-solid">Shop Now →</a></div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html" class="mobile-nav-link">Home</a><a href="products.html" class="mobile-nav-link">Products</a><a href="how-it-works.html" class="mobile-nav-link">How It Works</a><a href="about.html" class="mobile-nav-link">Our Story</a><a href="news.html" class="mobile-nav-link">News</a><a href="faq.html" class="mobile-nav-link">FAQ</a>
+  <div class="mobile-cta-wrap"><a href="products.html" class="btn-nav-solid" style="text-align:center;padding:12px;">Shop Now →</a></div>
+</div>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Home</a> › Contact Us</div>
+    <h1>Get in Touch</h1>
+    <p>Have a question, custom order, or partnership enquiry? Our team responds within 30 minutes on WhatsApp.</p>
+  </div>
+</div>
+
+<section class="section section-white">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- LEFT: INFO -->
+      <div class="contact-info">
+        <div style="margin-bottom:4px;">
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--dark);margin-bottom:8px;">We'd love to hear from you</h3>
+          <p style="font-size:14.5px;color:var(--muted);line-height:1.75;">Whether you are placing an order, asking about a product, making a bulk enquiry, or applying to become an artisan — we are here.</p>
+        </div>
+
+        <a href="https://wa.me/2348100000000" class="wa-btn" target="_blank">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Chat on WhatsApp
+        </a>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📞</div>
+          <div><h4>Phone</h4><a href="tel:+2348100000000">+234 810 000 0000</a><br><p style="font-size:12px;margin-top:2px;">Mon–Sat, 8am–8pm WAT</p></div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">✉️</div>
+          <div><h4>Email</h4><a href="mailto:hello@abacraft.ng">hello@abacraft.ng</a><br><p style="font-size:12px;margin-top:2px;">We respond within 24 hours</p></div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">📍</div>
+          <div><h4>Our Base</h4><p>Ariaria International Market,<br>Aba, Abia State, Nigeria</p></div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-info-icon">🌍</div>
+          <div><h4>Social Media</h4>
+            <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap;">
+              <a href="#" style="color:var(--clay);font-weight:600;font-size:13px;">Facebook</a>
+              <a href="#" style="color:var(--clay);font-weight:600;font-size:13px;">Instagram</a>
+              <a href="#" style="color:var(--clay);font-weight:600;font-size:13px;">Twitter/X</a>
+              <a href="#" style="color:var(--clay);font-weight:600;font-size:13px;">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="map-embed">📍 Ariaria Market, Aba — Abia State, Nigeria</div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="form-card">
+        <h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--dark);margin-bottom:6px;">Send Us a Message</h3>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:28px;">Fill in the form below and our team will get back to you within 24 hours.</p>
+
+        <div id="contactForm">
+          <div class="form-row">
+            <div class="form-group"><label>First Name *</label><input type="text" placeholder="e.g. Emeka" required></div>
+            <div class="form-group"><label>Last Name *</label><input type="text" placeholder="e.g. Okonkwo" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Phone Number *</label><input type="tel" placeholder="+234 800 000 0000" required></div>
+            <div class="form-group"><label>Email Address</label><input type="email" placeholder="you@example.com"></div>
+          </div>
+          <div class="form-group">
+            <label>Subject / Enquiry Type *</label>
+            <select>
+              <option value="">Select a subject…</option>
+              <option>Product Order Enquiry</option>
+              <option>Custom / Bespoke Order</option>
+              <option>Wholesale / Bulk Order</option>
+              <option>International / Export Order</option>
+              <option>Become an Artisan / Partner</option>
+              <option>Returns / Complaint</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Your Message *</label><textarea placeholder="Describe your order, product interest, or question in detail…" required></textarea></div>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px;">
+            <input type="checkbox" id="consent" style="width:auto;">
+            <label for="consent" style="font-size:13px;color:var(--muted);cursor:pointer;margin:0;">I agree to Aba Craft processing my data to respond to this enquiry.</label>
+          </div>
+          <button class="btn-form" onclick="submitForm()" style="width:100%;padding:14px;">Send Message →</button>
+        </div>
+
+        <div id="formSuccess" style="display:none;text-align:center;padding:48px 20px;">
+          <div style="font-size:48px;margin-bottom:16px;">✅</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:22px;color:var(--dark);margin-bottom:10px;">Message Sent!</h3>
+          <p style="color:var(--muted);">Thank you for reaching out. Our team will respond within 24 hours. For faster response, chat with us on WhatsApp.</p>
+          <a href="https://wa.me/2348100000000" class="wa-btn" style="margin:20px auto 0;display:inline-flex;" target="_blank">💬 Chat on WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ARTISAN APPLY -->
+<section style="background:var(--forest);padding:72px 5%;text-align:center;">
+  <div class="container">
+    <div class="section-eyebrow gold">For Artisans</div>
+    <h2 class="section-title white" style="margin-bottom:14px;">Are You an Aba Artisan?</h2>
+    <p style="font-size:16px;color:#A0B8AC;max-width:520px;margin:0 auto 32px;line-height:1.75;">Join hundreds of verified craftsmen already selling on Aba Craft. Free to join. Fair commissions. Nationwide reach.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+      <a href="how-it-works.html#selling" class="btn-white">How It Works for Artisans</a>
+      <a href="https://wa.me/2348100000000?text=I am an artisan and want to list my products on Aba Craft" class="btn-outline-white" target="_blank">Apply via WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div><div><div class="nav-brand" style="color:white;">Aba Craft</div></div></div><p>Connecting Aba's finest artisans with buyers across Nigeria and the world.</p><div class="footer-social"><a href="#">fb</a><a href="#">ig</a><a href="https://wa.me/2348100000000">wa</a></div></div>
+    <div class="footer-col"><h5>Products</h5><ul><li><a href="products.html">All Products</a></li><li><a href="products.html#footwear">Footwear</a></li><li><a href="products.html#bags">Bags</a></li></ul></div>
+    <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">Our Story</a></li><li><a href="news.html">News</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Contact Us</a></li><li><a href="how-it-works.html#returns">Returns</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Aba Craft. All rights reserved.</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span></div>
+</footer>
+<script>
+  const ham=document.getElementById('hamburger'),mob=document.getElementById('mobileNav');
+  ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');});
+  function submitForm(){
+    document.getElementById('contactForm').style.display='none';
+    document.getElementById('formSuccess').style.display='block';
+  }
+</script>
+</body></html>

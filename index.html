@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aba Craft — Handmade in Aba, Loved Worldwide</title>
+<meta name="description" content="Aba Craft is Nigeria's premier marketplace for authentic handmade leather shoes, bags, garments and more — crafted by Aba's finest artisans.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <span>🇳🇬 Made in Aba, Delivered Nationwide</span>
+    <div class="sep"></div>
+    <a href="tel:+2348100000000">📞 +234 810 000 0000</a>
+  </div>
+  <div class="topbar-right">
+    <a href="https://wa.me/2348100000000" target="_blank">💬 WhatsApp</a>
+    <div class="sep"></div>
+    <a href="pages/contact.html">✉️ Contact Us</a>
+    <div class="sep"></div>
+    <a href="#">▶ YouTube</a>
+    <a href="#">📷 Instagram</a>
+  </div>
+</div>
+
+<!-- MAIN NAV -->
+<nav class="main-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/>
+        <path d="M12 2V22M3 7L21 17M21 7L3 17" stroke="white" stroke-width="1" stroke-opacity="0.5"/>
+      </svg>
+    </div>
+    <div>
+      <div class="nav-brand">Aba Craft</div>
+      <div class="nav-tagline">Handmade in Aba</div>
+    </div>
+  </a>
+
+  <ul class="nav-menu">
+    <li class="nav-item">
+      <a href="index.html" class="nav-link active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a href="pages/products.html" class="nav-link">
+        Products
+        <svg class="caret" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+      <div class="mega-dropdown">
+        <div class="mega-col">
+          <h6>By Category</h6>
+          <a href="pages/products.html#footwear" class="mega-link"><span class="mega-link-icon">👟</span><div><div class="mega-link-label">Footwear</div><div class="mega-link-sub">Leather shoes & sandals</div></div></a>
+          <a href="pages/products.html#bags" class="mega-link"><span class="mega-link-icon">👜</span><div><div class="mega-link-label">Bags & Leather</div><div class="mega-link-sub">Handstitched goods</div></div></a>
+          <a href="pages/products.html#fashion" class="mega-link"><span class="mega-link-icon">👘</span><div><div class="mega-link-label">Fashion & Garments</div><div class="mega-link-sub">Tailored & Ankara wear</div></div></a>
+        </div>
+        <div class="mega-col">
+          <h6>By Type</h6>
+          <a href="pages/products.html#furniture" class="mega-link"><span class="mega-link-icon">🪑</span><div><div class="mega-link-label">Furniture & Décor</div><div class="mega-link-sub">Wood & rattan craft</div></div></a>
+          <a href="pages/products.html#wholesale" class="mega-link"><span class="mega-link-icon">🏭</span><div><div class="mega-link-label">Wholesale Orders</div><div class="mega-link-sub">Bulk & B2B supply</div></div></a>
+          <a href="pages/products.html#export" class="mega-link"><span class="mega-link-icon">🌍</span><div><div class="mega-link-label">Diaspora & Export</div><div class="mega-link-sub">International shipping</div></div></a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="pages/how-it-works.html" class="nav-link">
+        How It Works
+        <svg class="caret" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </a>
+      <div class="dropdown">
+        <a href="pages/how-it-works.html#buying" class="dropdown-link"><span class="dd-icon">🛒</span> Buying Guide</a>
+        <a href="pages/how-it-works.html#selling" class="dropdown-link"><span class="dd-icon">🏪</span> Become an Artisan</a>
+        <a href="pages/how-it-works.html#delivery" class="dropdown-link"><span class="dd-icon">🚚</span> Delivery & Shipping</a>
+        <a href="pages/how-it-works.html#returns" class="dropdown-link"><span class="dd-icon">🔄</span> Returns Policy</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a href="pages/about.html" class="nav-link">Our Story</a>
+    </li>
+    <li class="nav-item">
+      <a href="pages/news.html" class="nav-link">News & Blog</a>
+    </li>
+    <li class="nav-item">
+      <a href="pages/faq.html" class="nav-link">FAQ</a>
+    </li>
+  </ul>
+
+  <div class="nav-cta-wrap">
+    <a href="pages/contact.html" class="btn-nav-outline">Contact Us</a>
+    <a href="pages/products.html" class="btn-nav-solid">Shop Now →</a>
+  </div>
+
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-search">
+    <input type="text" placeholder="Search products, categories…">
+  </div>
+  <a href="index.html" class="mobile-nav-link">Home</a>
+  <div>
+    <div class="mobile-nav-link" onclick="toggleSub('sub1')">Products <span>›</span></div>
+    <div class="mobile-sub" id="sub1">
+      <a href="pages/products.html#footwear" class="mobile-sub-link">👟 Footwear</a>
+      <a href="pages/products.html#bags" class="mobile-sub-link">👜 Bags & Leather</a>
+      <a href="pages/products.html#fashion" class="mobile-sub-link">👘 Fashion & Garments</a>
+      <a href="pages/products.html#furniture" class="mobile-sub-link">🪑 Furniture & Décor</a>
+      <a href="pages/products.html#wholesale" class="mobile-sub-link">🏭 Wholesale</a>
+    </div>
+  </div>
+  <div>
+    <div class="mobile-nav-link" onclick="toggleSub('sub2')">How It Works <span>›</span></div>
+    <div class="mobile-sub" id="sub2">
+      <a href="pages/how-it-works.html#buying" class="mobile-sub-link">🛒 Buying Guide</a>
+      <a href="pages/how-it-works.html#selling" class="mobile-sub-link">🏪 Become an Artisan</a>
+      <a href="pages/how-it-works.html#delivery" class="mobile-sub-link">🚚 Delivery & Shipping</a>
+      <a href="pages/how-it-works.html#returns" class="mobile-sub-link">🔄 Returns Policy</a>
+    </div>
+  </div>
+  <a href="pages/about.html" class="mobile-nav-link">Our Story</a>
+  <a href="pages/news.html" class="mobile-nav-link">News & Blog</a>
+  <a href="pages/faq.html" class="mobile-nav-link">FAQ</a>
+  <div class="mobile-cta-wrap">
+    <a href="pages/contact.html" class="btn-nav-outline" style="text-align:center;padding:12px;">Contact Us</a>
+    <a href="pages/products.html" class="btn-nav-solid" style="text-align:center;padding:12px;">Shop Now →</a>
+  </div>
+</div>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-content">
+    <div>
+      <div class="hero-eyebrow">🇳🇬 Proudly Made in Aba, Nigeria</div>
+      <h1>Africa's Finest<br><span class="accent">Handcrafted</span><br>Products</h1>
+      <p class="hero-desc">Discover authentic leather shoes, bags, fashion and more — made by Aba's skilled artisans. Quality you can feel. Prices you'll love. Delivered to your door.</p>
+      <div class="hero-btns">
+        <a href="pages/products.html" class="btn-hero-primary">Shop All Products →</a>
+        <a href="pages/about.html" class="btn-hero-ghost">Our Story</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="hero-stat-num">500+</div>
+          <div class="hero-stat-label">Verified Artisans</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">3,200+</div>
+          <div class="hero-stat-label">Products Listed</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">15K+</div>
+          <div class="hero-stat-label">Orders Delivered</div>
+        </div>
+        <div>
+          <div class="hero-stat-num">4.8★</div>
+          <div class="hero-stat-label">Customer Rating</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-img-stack">
+      <div class="hero-float-badge">
+        <div class="badge-num">98%</div>
+        <div>Delivery<br>Success Rate</div>
+      </div>
+      <div class="hero-img-main">
+        <img src="https://images.unsplash.com/photo-1605812830455-2fadc55bc4ba?w=800&q=80" alt="Aba leather craftsman at work" loading="eager">
+      </div>
+      <div class="hero-img-thumb">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Handcrafted Aba shoes" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><span class="trust-icon">✅</span> 100% Verified Artisans</div>
+    <div class="trust-item"><span class="trust-icon">🚚</span> Nationwide Delivery</div>
+    <div class="trust-item"><span class="trust-icon">🔄</span> Easy Returns & Refunds</div>
+    <div class="trust-item"><span class="trust-icon">🔒</span> Secure Payments</div>
+    <div class="trust-item"><span class="trust-icon">💬</span> 24/7 WhatsApp Support</div>
+  </div>
+</div>
+
+<!-- SHOP BY CATEGORY -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-hd center">
+      <div class="section-eyebrow">Browse</div>
+      <h2 class="section-title">Shop by Category</h2>
+      <p class="section-sub">From iconic Aba leather shoes to hand-woven baskets — find it all here.</p>
+    </div>
+    <div class="cat-strip">
+      <a href="pages/products.html#footwear" class="cat-card">
+        <img class="cat-card-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=300&q=75" alt="Footwear">
+        <div class="cat-card-label">👟 Footwear</div>
+      </a>
+      <a href="pages/products.html#bags" class="cat-card">
+        <img class="cat-card-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=300&q=75" alt="Bags">
+        <div class="cat-card-label">👜 Bags</div>
+      </a>
+      <a href="pages/products.html#fashion" class="cat-card">
+        <img class="cat-card-img" src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=300&q=75" alt="Fashion">
+        <div class="cat-card-label">👘 Fashion</div>
+      </a>
+      <a href="pages/products.html#furniture" class="cat-card">
+        <img class="cat-card-img" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=300&q=75" alt="Furniture">
+        <div class="cat-card-label">🪑 Furniture</div>
+      </a>
+      <a href="pages/products.html#wholesale" class="cat-card">
+        <img class="cat-card-img" src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=300&q=75" alt="Wholesale">
+        <div class="cat-card-label">🏭 Wholesale</div>
+      </a>
+      <a href="pages/products.html#export" class="cat-card">
+        <img class="cat-card-img" src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=300&q=75" alt="Export">
+        <div class="cat-card-label">🌍 Export</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PRODUCTS -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-hd" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div class="section-eyebrow">Featured</div>
+        <h2 class="section-title">Our Best Sellers</h2>
+        <p class="section-sub">Top-rated products from Aba's most trusted artisans.</p>
+      </div>
+      <a href="pages/products.html" class="btn-view-all">View All Products →</a>
+    </div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Aba handmade leather shoes">
+        <div class="product-card-body">
+          <span class="product-badge">Footwear</span>
+          <h3>Classic Aba Leather Oxford</h3>
+          <p>Hand-stitched genuine leather, durable sole. Available in all sizes. A staple from Aba's master cobblers.</p>
+          <div class="product-card-foot">
+            <div class="product-price">₦18,500</div>
+            <a href="pages/products.html" class="product-cta">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80" alt="Aba handmade leather bag">
+        <div class="product-card-body">
+          <span class="product-badge">Bags</span>
+          <h3>Executive Leather Briefcase</h3>
+          <p>Full-grain leather briefcase with laptop compartment. Handcrafted by Aba's leather artisans for professionals.</p>
+          <div class="product-card-foot">
+            <div class="product-price">₦32,000</div>
+            <a href="pages/products.html" class="product-cta">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="Ankara fashion Aba">
+        <div class="product-card-body">
+          <span class="product-badge">Fashion</span>
+          <h3>Bespoke Ankara Senator Suit</h3>
+          <p>Tailor-made Ankara senator outfit. Pick your fabric, send your measurements. 7-day turnaround from Aba.</p>
+          <div class="product-card-foot">
+            <div class="product-price">₦25,000</div>
+            <a href="pages/products.html" class="product-cta">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=600&q=80" alt="Aba leather sandals">
+        <div class="product-card-body">
+          <span class="product-badge">Footwear</span>
+          <h3>Artisan Leather Sandals</h3>
+          <p>Lightweight, breathable sandals hand-carved from premium cowhide. Comfortable for all-day wear.</p>
+          <div class="product-card-foot">
+            <div class="product-price">₦9,500</div>
+            <a href="pages/products.html" class="product-cta">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80" alt="Leather backpack Aba">
+        <div class="product-card-body">
+          <span class="product-badge">Bags</span>
+          <h3>Leather Backpack — Explorer</h3>
+          <p>Rugged yet elegant leather backpack. Perfect for students, travelers, and everyday professionals. Built to last years.</p>
+          <div class="product-card-foot">
+            <div class="product-price">₦27,500</div>
+            <a href="pages/products.html" class="product-cta">Order Now →</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Handmade furniture Nigeria">
+        <div class="product-card-body">
+          <span class="product-badge">Furniture</span>
+          <h3>Rattan Lounge Chair</h3>
+          <p>Handwoven rattan chair with cushion. Brings natural warmth to any living room. Fully customisable finish.</p>
+          <div class="product-card-foot">
+            <div class="product-price">₦55,000</div>
+            <a href="pages/products.html" class="product-cta">Order Now →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY ABA CRAFT -->
+<section class="section section-dark">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+      <div>
+        <div class="section-eyebrow gold">Why Aba Craft</div>
+        <h2 class="section-title white">Why Thousands Trust<br>Aba Craft</h2>
+        <p class="section-sub white">We don't just sell products. We connect you directly to the craftsmen who make them — with full quality assurance, fair pricing, and nationwide delivery.</p>
+        <div style="margin-top:32px;">
+          <a href="pages/about.html" class="btn-hero-primary">Learn Our Story →</a>
+        </div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="feature-icon-wrap">✅</div>
+          <div>
+            <h4>Verified Artisans</h4>
+            <p>Every craftsman is vetted for quality before listing. No middlemen, no fakes.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">🚚</div>
+          <div>
+            <h4>Nationwide Delivery</h4>
+            <p>We deliver to all 36 states. Fast, tracked, and insured shipments.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">🛡️</div>
+          <div>
+            <h4>Buyer Protection</h4>
+            <p>Not happy? Full refund or replacement — no questions asked within 7 days.</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon-wrap">💬</div>
+          <div>
+            <h4>WhatsApp Support</h4>
+            <p>Chat with our team 24/7. Custom orders, bulk pricing, and more.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-hd center">
+      <div class="section-eyebrow">Simple Process</div>
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-sub">Four easy steps from browse to doorstep.</p>
+    </div>
+    <div class="steps-row">
+      <div class="step-card">
+        <div class="step-connector"></div>
+        <div class="step-num">1</div>
+        <h4>Browse & Choose</h4>
+        <p>Explore our full catalogue of verified handmade products across all categories.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-connector"></div>
+        <div class="step-num">2</div>
+        <h4>Place Your Order</h4>
+        <p>Select size, colour, and quantity. Pay securely — online or on delivery.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-connector"></div>
+        <div class="step-num">3</div>
+        <h4>Artisan Crafts It</h4>
+        <p>Your item is made fresh in Aba and quality-checked before packaging.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-connector"></div>
+        <div class="step-num">4</div>
+        <h4>Fast Delivery</h4>
+        <p>We dispatch via trusted couriers. Track your order every step of the way.</p>
+      </div>
+    </div>
+    <div class="view-all-wrap">
+      <a href="pages/how-it-works.html" class="btn-view-all">Full Process Details →</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-hd center">
+      <div class="section-eyebrow">Reviews</div>
+      <h2 class="section-title">What Our Customers Say</h2>
+      <p class="section-sub">Real stories from buyers across Nigeria and the diaspora.</p>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">I ordered custom leather shoes for my wedding and they were absolutely perfect — rivals anything from Lagos boutiques, at half the price. Aba Craft is something special.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--clay);">EO</div>
+          <div>
+            <div class="testi-name">Emeka Okonkwo</div>
+            <div class="testi-role">Lagos State • Footwear Buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">As a retailer in Abuja, finding consistent quality from Aba was always a challenge. Aba Craft solved that completely. My wholesale orders arrive on time, every time.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--forest);">FD</div>
+          <div>
+            <div class="testi-name">Fatima Danladi</div>
+            <div class="testi-role">Abuja • Wholesale Buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">Being in London and wanting authentic Nigerian-made goods has always been hard. Aba Craft ships internationally and the packaging is beautiful. I am now a regular customer.</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--gold);color:#111;">CN</div>
+          <div>
+            <div class="testi-name">Chukwuemeka Nwosu</div>
+            <div class="testi-role">London, UK • Diaspora Customer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS PREVIEW -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-hd" style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+      <div>
+        <div class="section-eyebrow">News & Blog</div>
+        <h2 class="section-title">Latest from Aba Craft</h2>
+      </div>
+      <a href="pages/news.html" class="btn-view-all">All Articles →</a>
+    </div>
+    <div class="news-grid">
+      <div class="news-card">
+        <img class="news-card-img" src="https://images.unsplash.com/photo-1605812830455-2fadc55bc4ba?w=600&q=75" alt="Aba artisan">
+        <div class="news-card-body">
+          <span class="news-tag">Artisan Stories</span>
+          <h3>Meet Chukwudi: The Cobbler Who Exports to 5 Countries</h3>
+          <p>From a small workshop in Ariaria Market, Chukwudi now ships 200 pairs of handmade shoes monthly to the UK, US, and Canada.</p>
+          <div class="news-meta">May 10, 2025</div>
+          <a href="pages/news.html" class="news-read-more">Read More →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img class="news-card-img" src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=75" alt="Aba market">
+        <div class="news-card-body">
+          <span class="news-tag">Industry News</span>
+          <h3>Ariaria International Market: Africa's Largest Leather Hub</h3>
+          <p>A deep dive into the market that produces more shoes per day than some entire countries — and why it still remains underrated globally.</p>
+          <div class="news-meta">April 28, 2025</div>
+          <a href="pages/news.html" class="news-read-more">Read More →</a>
+        </div>
+      </div>
+      <div class="news-card">
+        <img class="news-card-img" src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=600&q=75" alt="Shipping packages Nigeria">
+        <div class="news-card-body">
+          <span class="news-tag">Tips & Guides</span>
+          <h3>How to Order Custom Shoes from Aba in 5 Easy Steps</h3>
+          <p>A step-by-step guide to getting perfectly fitted, custom-made leather shoes from Aba delivered to your door anywhere in Nigeria.</p>
+          <div class="news-meta">April 15, 2025</div>
+          <a href="pages/news.html" class="news-read-more">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <h2>Ready to Experience Aba's Best?</h2>
+  <p>Join over 15,000 happy customers. Browse our catalogue, place your order, and receive authentic Nigerian craftsmanship at your doorstep.</p>
+  <div class="cta-banner-btns">
+    <a href="pages/products.html" class="btn-white">Shop Now</a>
+    <a href="https://wa.me/2348100000000" class="btn-outline-white">💬 Chat on WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">
+        <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 2V22M3 7L21 17M21 7L3 17" stroke="white" stroke-width="1" stroke-opacity="0.5"/></svg></div>
+        <div><div class="nav-brand" style="color:white;">Aba Craft</div><div class="nav-tagline">Handmade in Aba</div></div>
+      </div>
+      <p>Connecting Aba's finest artisans with buyers across Nigeria and the world. Handmade with pride. Delivered with care.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">fb</a>
+        <a href="#" title="Instagram">ig</a>
+        <a href="https://wa.me/2348100000000" title="WhatsApp">wa</a>
+        <a href="#" title="Twitter/X">x</a>
+        <a href="#" title="YouTube">yt</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Products</h5>
+      <ul>
+        <li><a href="pages/products.html#footwear">Footwear</a></li>
+        <li><a href="pages/products.html#bags">Bags & Leather</a></li>
+        <li><a href="pages/products.html#fashion">Fashion</a></li>
+        <li><a href="pages/products.html#furniture">Furniture</a></li>
+        <li><a href="pages/products.html#wholesale">Wholesale</a></li>
+        <li><a href="pages/products.html#export">Diaspora Export</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <ul>
+        <li><a href="pages/about.html">Our Story</a></li>
+        <li><a href="pages/how-it-works.html">How It Works</a></li>
+        <li><a href="pages/news.html">News & Blog</a></li>
+        <li><a href="pages/faq.html">FAQ</a></li>
+        <li><a href="pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Support</h5>
+      <ul>
+        <li><a href="pages/how-it-works.html#buying">Buying Guide</a></li>
+        <li><a href="pages/how-it-works.html#delivery">Track Your Order</a></li>
+        <li><a href="pages/how-it-works.html#returns">Returns Policy</a></li>
+        <li><a href="pages/how-it-works.html#selling">Become an Artisan</a></li>
+        <li><a href="pages/contact.html">Raise a Complaint</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Aba Craft. All rights reserved.</span>
+    <span><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Use</a></span>
+  </div>
+</footer>
+
+<script>
+  // Hamburger toggle
+  const ham = document.getElementById('hamburger');
+  const mob = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mob.classList.toggle('open');
+    document.body.style.overflow = mob.classList.contains('open') ? 'hidden' : '';
+  });
+  function toggleSub(id) {
+    document.getElementById(id).classList.toggle('open');
+  }
+</script>
+</body>
+</html>

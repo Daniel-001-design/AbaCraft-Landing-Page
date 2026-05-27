@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products — Aba Craft</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.filter-bar{background:var(--white);border-bottom:1px solid var(--border);padding:14px 5%;position:sticky;top:68px;z-index:100;}
+.filter-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+.filter-btn{padding:8px 18px;border-radius:20px;border:1.5px solid var(--border);font-size:13px;font-weight:500;cursor:pointer;background:white;color:var(--text);transition:all .2s;font-family:inherit;}
+.filter-btn:hover,.filter-btn.active{background:var(--clay);color:white;border-color:var(--clay);}
+.product-section{padding:56px 5%;}
+.product-section-title{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--dark);margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--clay);display:inline-block;}
+.product-section+.product-section{padding-top:0;}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="topbar-left">
+    <span>🇳🇬 Made in Aba, Delivered Nationwide</span>
+    <div class="sep"></div>
+    <a href="tel:+2348100000000">📞 +234 810 000 0000</a>
+  </div>
+  <div class="topbar-right">
+    <a href="https://wa.me/2348100000000" target="_blank">💬 WhatsApp</a>
+    <div class="sep"></div>
+    <a href="contact.html">✉️ Contact Us</a>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="main-nav">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 2V22M3 7L21 17M21 7L3 17" stroke="white" stroke-width="1" stroke-opacity="0.5"/></svg></div>
+    <div><div class="nav-brand">Aba Craft</div><div class="nav-tagline">Handmade in Aba</div></div>
+  </a>
+  <ul class="nav-menu">
+    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="products.html" class="nav-link active">Products <svg class="caret" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></a>
+      <div class="mega-dropdown">
+        <div class="mega-col"><h6>By Category</h6>
+          <a href="#footwear" class="mega-link"><span class="mega-link-icon">👟</span><div><div class="mega-link-label">Footwear</div><div class="mega-link-sub">Leather shoes &amp; sandals</div></div></a>
+          <a href="#bags" class="mega-link"><span class="mega-link-icon">👜</span><div><div class="mega-link-label">Bags &amp; Leather</div><div class="mega-link-sub">Handstitched goods</div></div></a>
+          <a href="#fashion" class="mega-link"><span class="mega-link-icon">👘</span><div><div class="mega-link-label">Fashion &amp; Garments</div><div class="mega-link-sub">Tailored &amp; Ankara wear</div></div></a>
+        </div>
+        <div class="mega-col"><h6>By Type</h6>
+          <a href="#furniture" class="mega-link"><span class="mega-link-icon">🪑</span><div><div class="mega-link-label">Furniture &amp; Décor</div><div class="mega-link-sub">Wood &amp; rattan craft</div></div></a>
+          <a href="#wholesale" class="mega-link"><span class="mega-link-icon">🏭</span><div><div class="mega-link-label">Wholesale Orders</div><div class="mega-link-sub">Bulk &amp; B2B supply</div></div></a>
+          <a href="#export" class="mega-link"><span class="mega-link-icon">🌍</span><div><div class="mega-link-label">Diaspora &amp; Export</div><div class="mega-link-sub">International shipping</div></div></a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+    <li class="nav-item"><a href="about.html" class="nav-link">Our Story</a></li>
+    <li class="nav-item"><a href="news.html" class="nav-link">News &amp; Blog</a></li>
+    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+  </ul>
+  <div class="nav-cta-wrap">
+    <a href="contact.html" class="btn-nav-outline">Contact Us</a>
+    <a href="https://wa.me/2348100000000" class="btn-nav-solid">Order on WhatsApp →</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-search"><input type="text" placeholder="Search products…"></div>
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="products.html" class="mobile-nav-link">Products</a>
+  <a href="how-it-works.html" class="mobile-nav-link">How It Works</a>
+  <a href="about.html" class="mobile-nav-link">Our Story</a>
+  <a href="news.html" class="mobile-nav-link">News &amp; Blog</a>
+  <a href="faq.html" class="mobile-nav-link">FAQ</a>
+  <div class="mobile-cta-wrap">
+    <a href="contact.html" class="btn-nav-outline" style="text-align:center;padding:12px;">Contact Us</a>
+    <a href="https://wa.me/2348100000000" class="btn-nav-solid" style="text-align:center;padding:12px;">Order on WhatsApp</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Home</a> › Products</div>
+    <h1>Our Products</h1>
+    <p>Browse thousands of handcrafted goods from Aba's best artisans — leather shoes, bags, garments, furniture and more.</p>
+  </div>
+</div>
+
+<!-- FILTER BAR -->
+<div class="filter-bar">
+  <div class="filter-inner">
+    <span style="font-size:13px;font-weight:600;color:var(--muted);margin-right:6px;">Filter:</span>
+    <button class="filter-btn active" onclick="filterCat(this,'all')">All Products</button>
+    <button class="filter-btn" onclick="filterCat(this,'footwear')">👟 Footwear</button>
+    <button class="filter-btn" onclick="filterCat(this,'bags')">👜 Bags</button>
+    <button class="filter-btn" onclick="filterCat(this,'fashion')">👘 Fashion</button>
+    <button class="filter-btn" onclick="filterCat(this,'furniture')">🪑 Furniture</button>
+    <button class="filter-btn" onclick="filterCat(this,'wholesale')">🏭 Wholesale</button>
+  </div>
+</div>
+
+<!-- FOOTWEAR -->
+<section class="product-section section-white" id="footwear" data-cat="footwear">
+  <div class="container">
+    <div class="product-section-title">👟 Footwear</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600&q=80" alt="Leather Oxford Shoes">
+        <div class="product-card-body">
+          <span class="product-badge">Footwear</span>
+          <h3>Classic Leather Oxford</h3>
+          <p>Hand-stitched genuine leather oxford. Available UK 6–13. Durable sole, formal finish.</p>
+          <div class="product-card-foot"><div class="product-price">₦18,500</div><a href="https://wa.me/2348100000000?text=I want to order Classic Leather Oxford" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=600&q=80" alt="Leather Sandals">
+        <div class="product-card-body">
+          <span class="product-badge">Footwear</span>
+          <h3>Artisan Leather Sandals</h3>
+          <p>Lightweight cowhide sandals. Breathable, all-day comfort. Great for casual and semi-formal.</p>
+          <div class="product-card-foot"><div class="product-price">₦9,500</div><a href="https://wa.me/2348100000000?text=I want to order Artisan Leather Sandals" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1608256246200-53e635b5b65f?w=600&q=80" alt="Casual leather shoes">
+        <div class="product-card-body">
+          <span class="product-badge">Footwear</span>
+          <h3>Loafer — Smart Casual</h3>
+          <p>Premium slip-on loafer in smooth leather. Perfect for office, church, and outings.</p>
+          <div class="product-card-foot"><div class="product-price">₦15,000</div><a href="https://wa.me/2348100000000?text=I want to order Smart Casual Loafer" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BAGS -->
+<section class="product-section section-cream" id="bags" data-cat="bags">
+  <div class="container">
+    <div class="product-section-title">👜 Bags &amp; Leather Goods</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=80" alt="Leather briefcase">
+        <div class="product-card-body">
+          <span class="product-badge">Bags</span>
+          <h3>Executive Leather Briefcase</h3>
+          <p>Full-grain leather with laptop compartment. Hand-stitched brass fittings. Ideal for professionals.</p>
+          <div class="product-card-foot"><div class="product-price">₦32,000</div><a href="https://wa.me/2348100000000?text=I want to order Executive Leather Briefcase" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=80" alt="Leather backpack">
+        <div class="product-card-body">
+          <span class="product-badge">Bags</span>
+          <h3>Leather Backpack — Explorer</h3>
+          <p>Rugged yet stylish. Multiple compartments, padded back. Built for years of daily use.</p>
+          <div class="product-card-foot"><div class="product-price">₦27,500</div><a href="https://wa.me/2348100000000?text=I want to order Leather Backpack Explorer" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=600&q=80" alt="Ladies handbag">
+        <div class="product-card-body">
+          <span class="product-badge">Bags</span>
+          <h3>Ladies Tote Handbag</h3>
+          <p>Elegant tote in soft genuine leather. Available in brown, black, and tan. Custom colour on request.</p>
+          <div class="product-card-foot"><div class="product-price">₦22,000</div><a href="https://wa.me/2348100000000?text=I want to order Ladies Tote Handbag" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FASHION -->
+<section class="product-section section-white" id="fashion" data-cat="fashion">
+  <div class="container">
+    <div class="product-section-title">👘 Fashion &amp; Garments</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&q=80" alt="Ankara fashion">
+        <div class="product-card-body">
+          <span class="product-badge">Fashion</span>
+          <h3>Bespoke Ankara Senator Suit</h3>
+          <p>Tailor-made Ankara senator. Pick your fabric, send measurements. 7-day turnaround.</p>
+          <div class="product-card-foot"><div class="product-price">₦25,000</div><a href="https://wa.me/2348100000000?text=I want to order Ankara Senator Suit" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80" alt="African print dress">
+        <div class="product-card-body">
+          <span class="product-badge">Fashion</span>
+          <h3>African Print Midi Dress</h3>
+          <p>Bold Ankara print midi dress. Fully lined, zip closure. Available in multiple prints.</p>
+          <div class="product-card-foot"><div class="product-price">₦18,000</div><a href="https://wa.me/2348100000000?text=I want to order African Print Midi Dress" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Casual wear Nigeria">
+        <div class="product-card-body">
+          <span class="product-badge">Fashion</span>
+          <h3>Everyday Linen Shirt</h3>
+          <p>Hand-tailored linen shirt in Aba. Lightweight, breathable, sharp finish. Men &amp; women cuts.</p>
+          <div class="product-card-foot"><div class="product-price">₦12,000</div><a href="https://wa.me/2348100000000?text=I want to order Everyday Linen Shirt" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FURNITURE -->
+<section class="product-section section-cream" id="furniture" data-cat="furniture">
+  <div class="container">
+    <div class="product-section-title">🪑 Furniture &amp; Home Décor</div>
+    <div class="product-grid">
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Rattan lounge chair">
+        <div class="product-card-body">
+          <span class="product-badge">Furniture</span>
+          <h3>Rattan Lounge Chair</h3>
+          <p>Handwoven rattan with foam cushion. Natural, durable, and elegant for any living room.</p>
+          <div class="product-card-foot"><div class="product-price">₦55,000</div><a href="https://wa.me/2348100000000?text=I want to order Rattan Lounge Chair" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Carved wood table">
+        <div class="product-card-body">
+          <span class="product-badge">Furniture</span>
+          <h3>Carved Hardwood Coffee Table</h3>
+          <p>Hand-carved solid hardwood coffee table. Traditional Igbo motif carvings. One-of-a-kind finish.</p>
+          <div class="product-card-foot"><div class="product-price">₦75,000</div><a href="https://wa.me/2348100000000?text=I want to order Carved Hardwood Coffee Table" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <img class="product-card-img" src="https://images.unsplash.com/photo-1544457070-4cd773b4d71e?w=600&q=80" alt="Woven basket">
+        <div class="product-card-body">
+          <span class="product-badge">Décor</span>
+          <h3>Woven Storage Baskets (Set of 3)</h3>
+          <p>Handwoven palm frond baskets. Functional and decorative. Great for gifting or home use.</p>
+          <div class="product-card-foot"><div class="product-price">₦14,500</div><a href="https://wa.me/2348100000000?text=I want to order Woven Storage Baskets" class="product-cta" target="_blank">Order Now →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHOLESALE -->
+<section class="product-section section-white" id="wholesale" data-cat="wholesale">
+  <div class="container">
+    <div class="product-section-title">🏭 Wholesale &amp; Bulk Orders</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:start;">
+      <div class="info-card">
+        <h3>Bulk Footwear Supply</h3>
+        <p>Order 50+ pairs of leather shoes directly from Aba factories. Perfect for retailers, schools, and corporate gifting. Minimum order: 50 units.</p>
+        <ul>
+          <li>Custom branding available</li>
+          <li>Flexible payment terms</li>
+          <li>Dedicated account manager</li>
+          <li>Quality guarantee on every batch</li>
+        </ul>
+        <div style="margin-top:18px;"><a href="contact.html" class="btn-form" style="display:inline-block;text-decoration:none;">Request Wholesale Quote</a></div>
+      </div>
+      <div class="info-card">
+        <h3>Corporate &amp; NGO Orders</h3>
+        <p>Supplying NGOs, government agencies, and corporations with Made-in-Aba products. We have fulfilled orders for ICPC, corporate events, and charity drives.</p>
+        <ul>
+          <li>Invoice and receipt provided</li>
+          <li>Branded packaging options</li>
+          <li>Nationwide logistics managed</li>
+          <li>CAC-registered supplier</li>
+        </ul>
+        <div style="margin-top:18px;"><a href="contact.html" class="btn-form" style="display:inline-block;text-decoration:none;">Get a Quote</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPORT -->
+<section class="product-section section-cream" id="export" data-cat="export">
+  <div class="container">
+    <div class="product-section-title">🌍 Diaspora &amp; International Export</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+      <div>
+        <p style="font-size:16px;color:var(--muted);line-height:1.8;margin-bottom:20px;">Are you a Nigerian in the diaspora who wants authentic Aba-made goods? We handle everything — packaging, documentation, customs clearance, and door-to-door international delivery.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px;">
+          <span class="tag-chip">🇬🇧 United Kingdom</span>
+          <span class="tag-chip">🇺🇸 United States</span>
+          <span class="tag-chip">🇨🇦 Canada</span>
+          <span class="tag-chip">🇩🇪 Germany</span>
+          <span class="tag-chip">🇮🇹 Italy</span>
+          <span class="tag-chip">🇦🇺 Australia</span>
+        </div>
+        <a href="contact.html" class="btn-form" style="display:inline-block;text-decoration:none;">Contact Export Team</a>
+      </div>
+      <div class="info-card">
+        <h3>What We Handle</h3>
+        <ul>
+          <li>Secure packaging &amp; labelling</li>
+          <li>Export documentation &amp; customs forms</li>
+          <li>DHL / FedEx / Aramex partnerships</li>
+          <li>Order tracking from Aba to your door</li>
+          <li>Insurance on all international shipments</li>
+          <li>Estimated 7–14 working days delivery</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <h2>Can't Find What You're Looking For?</h2>
+  <p>Send us a WhatsApp message and we'll source it directly from Aba's artisans — custom size, colour, or design.</p>
+  <div class="cta-banner-btns">
+    <a href="https://wa.me/2348100000000" class="btn-white" target="_blank">💬 WhatsApp Custom Order</a>
+    <a href="contact.html" class="btn-outline-white">Contact Our Team</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo"><div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div><div><div class="nav-brand" style="color:white;">Aba Craft</div><div class="nav-tagline">Handmade in Aba</div></div></div>
+      <p>Connecting Aba's finest artisans with buyers across Nigeria and the world.</p>
+      <div class="footer-social"><a href="#">fb</a><a href="#">ig</a><a href="https://wa.me/2348100000000">wa</a><a href="#">x</a></div>
+    </div>
+    <div class="footer-col"><h5>Products</h5><ul>
+      <li><a href="#footwear">Footwear</a></li><li><a href="#bags">Bags &amp; Leather</a></li>
+      <li><a href="#fashion">Fashion</a></li><li><a href="#furniture">Furniture</a></li>
+      <li><a href="#wholesale">Wholesale</a></li><li><a href="#export">Export</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Company</h5><ul>
+      <li><a href="about.html">Our Story</a></li><li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="news.html">News &amp; Blog</a></li><li><a href="faq.html">FAQ</a></li>
+    </ul></div>
+    <div class="footer-col"><h5>Support</h5><ul>
+      <li><a href="how-it-works.html#delivery">Track Order</a></li>
+      <li><a href="how-it-works.html#returns">Returns</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Aba Craft. All rights reserved.</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span></div>
+</footer>
+
+<script>
+  const ham = document.getElementById('hamburger');
+  const mob = document.getElementById('mobileNav');
+  ham.addEventListener('click', () => { ham.classList.toggle('open'); mob.classList.toggle('open'); });
+  function toggleSub(id){ document.getElementById(id).classList.toggle('open'); }
+  function filterCat(btn, cat){
+    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.product-section').forEach(s=>{
+      if(cat==='all'||s.dataset.cat===cat){ s.style.display=''; }
+      else { s.style.display='none'; }
+    });
+  }
+</script>
+</body>
+</html>

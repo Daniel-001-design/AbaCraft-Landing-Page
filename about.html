@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Story — Aba Craft</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+.about-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;max-width:1200px;margin:0 auto;padding:80px 5%;}
+.about-img-wrap{position:relative;border-radius:18px;overflow:hidden;height:460px;}
+.about-img-wrap img{width:100%;height:100%;object-fit:cover;}
+.about-badge{position:absolute;bottom:24px;left:24px;background:white;border-radius:12px;padding:14px 20px;box-shadow:0 8px 30px rgba(0,0,0,.15);font-size:13px;font-weight:600;}
+.about-badge .num{font-family:'Playfair Display',serif;font-size:26px;color:var(--clay);display:block;line-height:1;}
+.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.value-card{background:var(--white);border:1px solid var(--border);border-radius:14px;padding:28px 22px;text-align:center;}
+.value-card .v-icon{font-size:36px;margin-bottom:14px;}
+.value-card h4{font-size:15px;font-weight:600;color:var(--dark);margin-bottom:8px;}
+.value-card p{font-size:13.5px;color:var(--muted);line-height:1.7;}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.team-card{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;text-align:center;}
+.team-card img{width:100%;height:200px;object-fit:cover;}
+.team-card-body{padding:18px;}
+.team-card h4{font-size:15px;font-weight:600;color:var(--dark);}
+.team-card p{font-size:13px;color:var(--muted);}
+@media(max-width:768px){.about-hero-grid{grid-template-columns:1fr;padding:48px 4%;}.value-grid{grid-template-columns:1fr 1fr;}.team-grid{grid-template-columns:1fr;}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-left"><span>🇳🇬 Made in Aba, Delivered Nationwide</span><div class="sep"></div><a href="tel:+2348100000000">📞 +234 810 000 0000</a></div>
+  <div class="topbar-right"><a href="https://wa.me/2348100000000" target="_blank">💬 WhatsApp</a><div class="sep"></div><a href="contact.html">✉️ Contact Us</a></div>
+</div>
+
+<nav class="main-nav">
+  <a href="../index.html" class="nav-logo">
+    <div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
+    <div><div class="nav-brand">Aba Craft</div><div class="nav-tagline">Handmade in Aba</div></div>
+  </a>
+  <ul class="nav-menu">
+    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+    <li class="nav-item"><a href="products.html" class="nav-link">Products</a></li>
+    <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+    <li class="nav-item"><a href="about.html" class="nav-link active">Our Story</a></li>
+    <li class="nav-item"><a href="news.html" class="nav-link">News &amp; Blog</a></li>
+    <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+  </ul>
+  <div class="nav-cta-wrap">
+    <a href="contact.html" class="btn-nav-outline">Contact Us</a>
+    <a href="products.html" class="btn-nav-solid">Shop Now →</a>
+  </div>
+  <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="../index.html" class="mobile-nav-link">Home</a>
+  <a href="products.html" class="mobile-nav-link">Products</a>
+  <a href="how-it-works.html" class="mobile-nav-link">How It Works</a>
+  <a href="about.html" class="mobile-nav-link">Our Story</a>
+  <a href="news.html" class="mobile-nav-link">News &amp; Blog</a>
+  <a href="faq.html" class="mobile-nav-link">FAQ</a>
+  <div class="mobile-cta-wrap">
+    <a href="contact.html" class="btn-nav-outline" style="text-align:center;padding:12px;">Contact Us</a>
+    <a href="products.html" class="btn-nav-solid" style="text-align:center;padding:12px;">Shop Now →</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="breadcrumb"><a href="../index.html">Home</a> › Our Story</div>
+    <h1>Born From the Heart of Aba</h1>
+    <p>The story behind Aba Craft — why we exist, what drives us, and the artisans we serve.</p>
+  </div>
+</div>
+
+<!-- STORY SECTION -->
+<div class="about-hero-grid">
+  <div class="about-img-wrap">
+    <img src="https://images.unsplash.com/photo-1605812830455-2fadc55bc4ba?w=800&q=80" alt="Aba craftsman at work">
+    <div class="about-badge">
+      <span class="num">Est. 2024</span>
+      Aba Craft, Nigeria
+    </div>
+  </div>
+  <div>
+    <div class="section-eyebrow">Our Story</div>
+    <h2 class="section-title">Why We Built Aba Craft</h2>
+    <p style="font-size:16px;color:var(--muted);line-height:1.85;margin-bottom:18px;">Aba, Abia State has long been Africa's hidden manufacturing capital — home to tens of thousands of skilled artisans producing world-class leather shoes, garments, bags, furniture, and more. Yet for decades, this incredible talent remained largely invisible to the rest of the world.</p>
+    <p style="font-size:16px;color:var(--muted);line-height:1.85;margin-bottom:18px;">Ariaria International Market — the heart of Aba's production economy — produces more handmade leather goods per day than many entire countries. Yet the artisans who power it rarely get the recognition, pricing, or platform they deserve.</p>
+    <p style="font-size:16px;color:var(--muted);line-height:1.85;margin-bottom:24px;"><strong style="color:var(--clay);">Aba Craft was built to change that.</strong> We are a digital marketplace that elevates Aba's finest craftsmen — giving them a verified platform, connecting them to modern buyers, and ensuring every transaction is fair, transparent, and celebrated.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;">
+      <span class="tag-chip">Authenticity</span>
+      <span class="tag-chip">Quality First</span>
+      <span class="tag-chip">Made in Nigeria</span>
+      <span class="tag-chip">Cultural Pride</span>
+      <span class="tag-chip">Artisan Support</span>
+      <span class="tag-chip">Fair Trade</span>
+    </div>
+  </div>
+</div>
+
+<!-- QUOTE -->
+<section style="background:var(--forest);padding:56px 5%;text-align:center;">
+  <div class="container">
+    <p style="font-family:'Playfair Display',serif;font-size:clamp(20px,3vw,30px);color:white;line-height:1.6;max-width:760px;margin:0 auto;">"Aba is not just a city — it is a craft. Every stitch, every sole, every thread carries the spirit of a people who built an industry with bare hands."</p>
+    <p style="color:var(--gold);margin-top:20px;font-size:14px;font-weight:600;">— The Aba Craft Team</p>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section section-white">
+  <div class="container">
+    <div class="section-hd center">
+      <div class="section-eyebrow">What We Stand For</div>
+      <h2 class="section-title">Our Core Values</h2>
+    </div>
+    <div class="value-grid">
+      <div class="value-card"><div class="v-icon">🎯</div><h4>Authenticity</h4><p>Every product on Aba Craft is genuinely handmade by verified Nigerian artisans. No replicas. No imports.</p></div>
+      <div class="value-card"><div class="v-icon">⭐</div><h4>Quality First</h4><p>We inspect every artisan before listing them. If it does not meet our standard, it does not reach our customers.</p></div>
+      <div class="value-card"><div class="v-icon">🤝</div><h4>Fair Trade</h4><p>Artisans earn fair prices. No middleman markup. Your money goes directly to the hands that made your product.</p></div>
+      <div class="value-card"><div class="v-icon">🌍</div><h4>Global Reach</h4><p>We believe Aba craftsmanship deserves a global audience. Our export arm ships to the UK, USA, Canada, and beyond.</p></div>
+      <div class="value-card"><div class="v-icon">🛡️</div><h4>Buyer Protection</h4><p>Every purchase is protected. Not satisfied? We resolve it — full refund or replacement, no questions asked.</p></div>
+      <div class="value-card"><div class="v-icon">🌱</div><h4>Community Impact</h4><p>We reinvest in Aba artisan communities — training, tools, market access, and visibility for the next generation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section style="background:var(--clay);padding:64px 5%;text-align:center;">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <div><div style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:white;">500+</div><div style="color:rgba(255,255,255,.75);font-size:14px;margin-top:4px;">Verified Artisans</div></div>
+      <div><div style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:white;">3,200+</div><div style="color:rgba(255,255,255,.75);font-size:14px;margin-top:4px;">Products Listed</div></div>
+      <div><div style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:white;">15K+</div><div style="color:rgba(255,255,255,.75);font-size:14px;margin-top:4px;">Orders Fulfilled</div></div>
+      <div><div style="font-family:'Playfair Display',serif;font-size:44px;font-weight:700;color:white;">4.8★</div><div style="color:rgba(255,255,255,.75);font-size:14px;margin-top:4px;">Customer Rating</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section section-cream">
+  <div class="container">
+    <div class="section-hd center">
+      <div class="section-eyebrow">The People</div>
+      <h2 class="section-title">Meet the Team</h2>
+      <p class="section-sub">A dedicated team passionate about Nigerian craftsmanship and e-commerce.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="CEO">
+        <div class="team-card-body"><h4>Chukwuemeka Eze</h4><p>Founder &amp; CEO</p></div>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&q=80" alt="Operations">
+        <div class="team-card-body"><h4>Ngozi Okafor</h4><p>Head of Operations</p></div>
+      </div>
+      <div class="team-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Artisan Relations">
+        <div class="team-card-body"><h4>Biodun Adewale</h4><p>Artisan Relations Manager</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <h2>Want to Partner with Aba Craft?</h2>
+  <p>Whether you are a retailer, NGO, or international buyer — we would love to work with you.</p>
+  <div class="cta-banner-btns">
+    <a href="contact.html" class="btn-white">Get in Touch</a>
+    <a href="products.html" class="btn-outline-white">Browse Products</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand"><div class="nav-logo"><div class="nav-logo-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="white" stroke-width="1.8" stroke-linejoin="round"/></svg></div><div><div class="nav-brand" style="color:white;">Aba Craft</div></div></div><p>Connecting Aba's finest artisans with buyers across Nigeria and the world.</p><div class="footer-social"><a href="#">fb</a><a href="#">ig</a><a href="https://wa.me/2348100000000">wa</a></div></div>
+    <div class="footer-col"><h5>Products</h5><ul><li><a href="products.html">All Products</a></li><li><a href="products.html#footwear">Footwear</a></li><li><a href="products.html#bags">Bags</a></li></ul></div>
+    <div class="footer-col"><h5>Company</h5><ul><li><a href="about.html">Our Story</a></li><li><a href="news.html">News</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
+    <div class="footer-col"><h5>Support</h5><ul><li><a href="contact.html">Contact Us</a></li><li><a href="how-it-works.html#returns">Returns</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>© 2025 Aba Craft. All rights reserved.</span><span><a href="#">Privacy</a> · <a href="#">Terms</a></span></div>
+</footer>
+<script>
+  const ham=document.getElementById('hamburger'),mob=document.getElementById('mobileNav');
+  ham.addEventListener('click',()=>{ham.classList.toggle('open');mob.classList.toggle('open');});
+</script>
+</body></html>
